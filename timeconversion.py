@@ -24,13 +24,20 @@ def timeConversion(s):
     else:
         return str(int(s[:2]) + 12) + s[2:8]
 
+
+time_str = input("Enter a time in the format HH:MM:SS AM/PM: ")
+
+converted_time = timeConversion(time_str)
+
+print("Converted time:", converted_time)
+
 # if __name__ == '__main__':
-    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
+#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    # s = input()
+#     s = input()
 
-    # result = timeConversion(s)
+#     result = timeConversion(s)
 
-    # fptr.write(result + '\n')
+#     fptr.write(result + '\n')
 
-    # fptr.close()
+#     fptr.close()
